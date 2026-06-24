@@ -71,7 +71,14 @@ Removes 3-star reviews (neutral sentiment) and keeps only clear positive (4-5 st
   - **Pandas:** Used for data manipulation and preprocessing the review datasets.
   - **Scikit-learn:** Employed for data splitting (train/test/validation), calculating evaluation metrics (F1-score, Precision, Recall), and computing class weights.
   - **Datasets (Hugging Face):** Used to load the Wongnai Review (2025) dataset.
+  - **Tokenizers / SentencePiece:** Libraries for tokenization; SentencePiece is the tokenization method used by WangChanBERTa.
   - **Matplotlib / Seaborn:** Used for visualizing confusion matrices.
+
+Before running the Jupyter notebooks, install the project dependencies in your terminal to help keep the environment consistent:
+
+```bash
+pip install -U torch==2.7.0 transformers==4.46.0 tokenizers==0.20.1 accelerate==0.34.2 datasets sentencepiece safetensors pandas matplotlib scikit-learn tqdm
+```
 
 ### Sentiment Analysis Model
 
